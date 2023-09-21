@@ -35,4 +35,13 @@ public Healthplan (Long id,String name ,Plan plan){
     public void setPlan(Plan plan) {
         this.plan = plan;
     }
+
+    @Override
+    public String toString() {
+        return "Healthplan{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", plan=" + plan +
+                '}';
+    }
 }

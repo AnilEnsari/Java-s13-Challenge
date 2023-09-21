@@ -1,5 +1,7 @@
 package employeeApp;
 
+import java.util.Arrays;
+
 public class Employee {
 
     Long id ;
@@ -59,16 +61,24 @@ if (index>=0 && index< healthplans.length) {
     if (healthplans[index] == null) {
         healthplans[index] = name;
     } else {
-        System.out.println( "index"+index+"has already a name!: ");
+        System.out.println( "index "+index+" has already a name!: ");
     }
 } else {
-    System.out.println("Sorry"+index+"is an invalid index!");
+    System.out.println("Sorry "+index+" is an invalid index!");
 
 }
 
       }
 
 
-
-
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", healthplans=" + Arrays.toString(healthplans) +
+                '}';
+    }
 }

@@ -29,4 +29,12 @@ public enum Plan {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "Plan{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
